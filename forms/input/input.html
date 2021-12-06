@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Personal Details: </legend>
+            <label for="userName">UserName: </label>
+            <input 
+                type="text" 
+                id="userName" 
+                name="user" 
+                placeholder="Enter your username"
+                minlength="10"
+                maxlength="20"
+                pattern="^[a-zA-Z0-9]*"
+                required
+                autofocus
+            >
+            <br>
+            <br>
+            <label for="password">Password: </label>
+            <input 
+                type="password" 
+                placeholder="Enter your Password" 
+                id="password" 
+                name="password"
+            >
+            <br>
+            <br>
+            <label for="age">Age: </label>
+            <input 
+                type="number" 
+                placeholder="Enter your age" 
+                id="age" 
+                name="age"
+                min="10"
+                max="99"
+            >
+            <br>
+            <br>
+            <label for="email">Email: </label>
+            <input 
+                type="email" 
+                placeholder="Enter your email" 
+                id="email" 
+                name="email"
+            >
+            <br>
+            <br>
+            <label for="dob">DOB: </label>
+            <input 
+                type="datetime-local" 
+                placeholder="Enter your dob" 
+                id="dob" 
+                name="dob"
+            >
+            <br>
+            <br>
+            <label for="gender">Gender: </label>
+            Male: <input 
+                type="radio" 
+                name="gender"
+                value="male"
+                checked
+            >
+            Female: <input 
+                type="radio" 
+                name="gender"
+                value="female"
+            >
+            Transgender: <input 
+                type="radio" 
+                name="gender"
+                value="trans"
+            >
+            <br>
+            <br>
+            <label for="gnder">Languages known: </label>
+            Telugu: <input 
+                type="checkbox"
+                name="lang"
+                value="telugu"
+                checked
+            >
+            Hindi: <input 
+                type="checkbox"
+                name="lang"
+                value="hindi"
+            >
+            English: <input 
+                type="checkbox"
+                name="lang"
+                value="english"
+            >
+            <br>
+            <br>
+            <label for="profile">Profile: </label>
+            <input type="file" name="profile" id="profile">
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <input type="submit">
+            <button> Data Submit </button>
+            <input type="reset" value="Res">
+        </fieldset>
+    </form>
+</body>
+</html>
